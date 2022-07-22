@@ -3,7 +3,6 @@ import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from '../images/logo.jpg';
 import loc from '../images/getloc.png';
 import PageOne from './page1';
-//import MobileNav from "./mobilenav";
 const apikey = '57585867c017425c442cf8a689ef42aa';
 
 function Navcom(){
@@ -65,8 +64,7 @@ function Navcom(){
                     </Nav>
                 </Navbar>
             </div>
-            {/*<MobileNav locbtn={getByLatLon} mns={searchByCity}/>*/}
-            {display ? <h1 style={{textAlign:"center"}}>Add city from Search</h1> : loading ? <h3 style={{textAlign:"center"}}>Loading...</h3> : <PageOne data={getData}/>}
+            {display ? <h1 style={{textAlign:"center"}} className='acfs'>Add city from Search</h1> : loading ? <h3 style={{textAlign:"center"}} className='loading'>Loading...</h3> : <PageOne data={getData}/>}
         </div>
     )
 }
