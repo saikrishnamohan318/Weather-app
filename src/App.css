@@ -2,6 +2,17 @@
   margin: auto 50px;
   padding: 0;
 }
+.nb {
+  font-size: 30px;
+}
+.nbimg {
+  width: 120px;
+  height: 100px;
+}
+.latlonimg {
+  width: 25px;
+  height: 25px;
+}
 .div2 {
   width: 70%;
   margin: auto;
@@ -26,18 +37,127 @@
   font-size: 20px;
   margin-top: 0px;
 }
-.dayhwp > p > img {
+.dayhwp > div > p > img {
   width: 25px;
   height: 25px;
   margin-right: 10px;
 }
-.conditions {
-  display: flex;
-  justify-content: space-between;
+.condition {
+  font-weight: 800;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {bottom: 450px;color: blue;}
+  to {bottom: 0px}
+}
+.day {
+  font-size: 25px;
 }
 #wc {
   width: 250px;
   height: 250px;
   position: relative;
   left: 200px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nb {
+    font-size: 20px;
+  }
+  .nbimg {
+    width: 75px;
+    height: 75px;
+  }
+  .form {
+    width: 70%;
+    height: 35px;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  .searchBtn {
+    font-size: 14px;
+  }
+  .city {
+    font-size: 25px;
+  }
+  .city > img {
+    width: 20px;
+    height: 20px;
+  }
+  .div2 {
+    width: 60%;
+  }
+  .deg1 {
+    height: 80px;
+    font-size: 60px;
+    text-align: center;
+  }
+  .deg2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .deg3 {
+    font-size: 12px;
+  }
+  .dayhwp > p > img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  } 
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .wa {
+    display: none;
+  }
+  .nbimg {
+    width: 65px;
+    height: 65px;
+  }
+  .city {
+    font-size: 20px;
+  }
+  .city > img {
+    width: 15px;
+    height: 15px;
+  }
+  .deg1 {
+    font-size: 50px;
+    text-align: center;
+    height: 60px;
+  }
+  .deg2 {
+    font-size: 14px;
+  }
+  .deg3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .wa {
+    display: none;
+  }
+  .nbimg {
+    width: 65px;
+    height: 65px;
+  }
+  .city {
+    font-size: 20px;
+  }
+  .city > img {
+    width: 15px;
+    height: 15px;
+  }
+  .deg1 {
+    font-size: 50px;
+    text-align: center;
+    height: 60px;
+  }
+  .deg2 {
+    font-size: 14px;
+  }
+  .deg3 {
+    font-size: 12px;
+  }
 }
