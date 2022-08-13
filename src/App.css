@@ -48,6 +48,9 @@
   animation: mymove 5s;
   animation-fill-mode: forwards;
 }
+.loader {
+  height: 80vh;
+}
 @keyframes mymove {
   from {bottom: 450px;color: blue;}
   to {bottom: 0px}

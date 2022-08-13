@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navcom from './components/navbar';
+import Navcom from './pages/navbar';
 
 function App() {
   return (
