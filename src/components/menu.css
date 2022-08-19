@@ -1,0 +1,15 @@
+.menuitems {
+    list-style-type: none;
+    display: none;
+}
+.newslink1 {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.latlonbtn {
+    border: none;
+    background-color: white;
+}

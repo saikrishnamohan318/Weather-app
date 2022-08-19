@@ -1,0 +1,36 @@
+/*weathernavbar css*/
+.nav {
+    margin: auto 50px;
+    padding: 0;
+  }
+  .brandnavlink {
+    display: flex;
+    align-items: center;
+  }
+  .nb {
+    font-size: 30px;
+  }
+  .nbimg {
+    width: 120px;
+    height: 100px;
+  }
+  .newslink {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .newslink:hover {
+    color: gray;
+  }
+  .latlonimg {
+    width: 25px;
+    height: 25px;
+  }
+  .menu {
+    display: none;
+    color: black;
+  }
+  .mobile {
+    display: none;
+  }
