@@ -100,25 +100,25 @@ function NewsComponent(){
                     </button>
                     <div className="collapse navbar-collapse mx-4" id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <a className="nav-link active" href="#home" onClick={weatherNews}>Home</a>
                             </li>
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <a className="nav-link" href="#india" onClick={generalNews}>India</a>
                             </li>
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <a className="nav-link" href="#business" onClick={businessNews}>Business</a>
                             </li>
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <a className="nav-link" href="#technology" onClick={technologyNews}>Technology</a>
                             </li>
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <a className="nav-link" href="#movies" onClick={moviesNews}>Movies</a>
                             </li>
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <a className="nav-link" href="#sports" onClick={sportsNews}>Sports</a>
                             </li>
-                            <li className="nav-item p-4">
+                            <li className="nav-item">
                                 <form className="d-flex">
                                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={e=>setSearchValue(e.target.value)} value={searchvalue}/>
                                     <button className="btn btn-outline-success" type="button" onClick={searchNews}>Search</button>

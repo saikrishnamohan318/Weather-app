@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch,useSelector } from 'react-redux';
 import { liveLocAction } from "../actions/liveloc.action";
 import { searchAction } from "../actions/search.action";
-import './weathernavbar.css'
+import './weathernavbarandpage.css'
 import PageOne from "./weatherpage";
 import Loader from '../components/loader';
 import DefaultNavBar from "../components/defaultnavbar";

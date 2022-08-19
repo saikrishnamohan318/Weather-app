@@ -1,5 +1,5 @@
 import React from "react";
-import './weatherpage.css';
+import './weathernavbarandpage.css';
 import location from '../images/location.png';
 import humidity from '../images/humidity.png';
 import wind from '../images/wind.png';
