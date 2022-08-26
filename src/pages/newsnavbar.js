@@ -90,13 +90,22 @@ function NewsComponent(){
             this.className += "active";
         });
     }
+
+    var lists = document.getElementById('navbarNav');
+    var showList = () => {
+        if(lists.style.display === 'none'){
+            lists.style.display = 'block';
+        }else {
+            lists.style.display = 'none';
+        }
+    }
     return(
         <div>
             <nav className="navbar navbar-expand-lg">
-                <div className="container">
+                <div className="container-fluid">
                     <a className="navbar-brand" href="/news"><img src={newslogo} alt='newslogo' width='80px' height='80px'/></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" onClick={showList} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"><i class="fa-solid fa-bars fa-xl"></i></span>
                     </button>
                     <div className="collapse navbar-collapse mx-4" id="navbarNav">
                         <ul className="navbar-nav">
@@ -119,7 +128,7 @@ function NewsComponent(){
                                 <a className="nav-link" href="#sports" onClick={sportsNews}>Sports</a>
                             </li>
                             <li className="nav-item">
-                                <form className="d-flex">
+                                <form className="d-flex navform">
                                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={e=>setSearchValue(e.target.value)} value={searchvalue}/>
                                     <button className="btn btn-outline-success" type="button" onClick={searchNews}>Search</button>
                                 </form>

@@ -18,7 +18,7 @@ function DefaultNavBar(props){
             <Navbar className='nav justify-content-between'>
                 <div className="brandnavlink">
                     <Navbar.Brand className='nb'><NavLink to='/' style={{textDecoration:"none",color:"black"}}><img className="nbimg" src={logo} alt='logo'/><span className="wa">Weather App</span></NavLink></Navbar.Brand>
-                    <NavLink to='/news' className='newslink'>News</NavLink>
+                    <NavLink to='' className='newslink'>News</NavLink>
                 </div>
                 <Nav className="defaultscreen">
                     <button style={{border:"none",backgroundColor:"white",marginRight:"10px"}} onClick={getByLatLon}><img className="latlonimg" src={loc} alt='loc'/></button>

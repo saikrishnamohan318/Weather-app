@@ -1,9 +1,10 @@
 /*navbar css*/
 .navbar {
-    padding: 0px 20px;
+    width: 90%;
+    margin: auto;
 }
 .nav-item {
-    padding: 0px 25px;
+    padding: 0px 30px;
 }
 .nav-link {
     color: black;
@@ -11,6 +12,16 @@
 }
 .nav-link:hover {
     color: gray
+}
+.navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none !important;
 }
 .active {
     color: blue;
@@ -24,14 +35,76 @@
     grid-template-columns: auto auto auto;
     row-gap: 60px;
 }
+.card {
+    width: 18rem;
+}
 .dnf {
     font-size: 35px;
     position: relative;
     left: 400px;
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
-    .nav-item {
-        padding: 0px 10px;
+@media (min-width: 1200px) and (max-width: 1399.5px) {
+    .card {
+        position: relative;
+        left: 30px;
     }
-  }
+    .nav-item {
+        padding: 0px 20px;
+    }
+    .newspage {
+        width: 90%;
+        margin: auto;
+    }    
+}
+
+@media (min-width: 992px) and (max-width: 1199.5px) {
+    .nav-item {
+        padding: 0px 8px;
+    }
+    .newspage {
+        width: 80%;
+    }
+    .card {
+        width: 14rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.5px) {  
+    .collapse {
+        text-align: center;
+    }  
+    .navform {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767.5px) {
+    .collapse {
+        text-align: center;
+    }
+    .nav-item {
+        padding: 5px;
+    }
+    .navform {
+        width: 60%;
+        margin: auto;
+    }
+    ::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .collapse { 
+        text-align: center;
+    }
+    .nav-item {
+        padding: 5px;
+    }
+    .navform {
+        width: 70%;
+        margin: auto;
+    }
+}

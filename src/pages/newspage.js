@@ -6,7 +6,7 @@ function NewsPageComponent({ newsData }){
         <>
         <div className="newspage mt-4">
             {data ? data.map(article=>(
-                <div className="card" style={{width: "18rem"}} key={article._id}>
+                <div className="card" key={article._id}>
                     <img src={article.media} className="card-img-top" alt="img" width='200px' height='200px'/>
                     <div className="card-body d-flex flex-column justify-content-between">
                         <h5 className="card-title">{article.title}</h5>
