@@ -29,7 +29,6 @@ function MobileNavComponent(props){
                 <span onClick={myFunction} style={{cursor:"pointer"}}><i className="fa-solid fa-bars fa-2x"></i></span>
             </Navbar>
             <ul className="menuitems" id="menu">
-                <li><NavLink to='' className='newslink1'>News</NavLink></li>
                 <li className="d-flex justify-content-center"><button className='latlonbtn' onClick={getByLatLon}><img className="latlonimg" src={loc} alt='loc'/></button></li>
                 <li>
                     <Form className='form1 d-flex'>
